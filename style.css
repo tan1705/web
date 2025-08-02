@@ -1,0 +1,105 @@
+*{margin: 0; padding: 0;box-sizing: border-box;}
+header a{
+    text-decoration: none;
+    color: rgb(247, 247, 247);
+    font-size: 19px;
+}
+.menu {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: #5f7f96; /* Màu nền như trong hình */
+}
+header ul.menu > li {
+    padding: 0; /* Bỏ padding cũ */
+    border-right: 1px solid #f8f8f8;
+    position: relative;
+    display: flex;
+    align-items: center;     /* Căn giữa theo chiều dọc */
+    justify-content: center !important; /* Căn giữa theo chiều ngang */
+    height: 60px;            /* Đảm bảo chiều cao ổn định */
+}
+
+header ul.menu > li > a {
+    display: block;
+    padding: 0 30px;          /* Khoảng cách ngang giữa các chữ */
+    line-height: 60px;        /* Canh giữa dọc (phụ trợ nếu không dùng flex) */
+    text-align: center;
+}
+
+
+.banner{
+    text-align: center;
+    width: 500px;
+    height: 500px;
+}
+.banner img {
+    width: 1600px;
+    height: 500px;
+}
+
+header{
+    display: flex;
+    padding: 0px 20px;
+    justify-self: space-between;
+    background-color: rgb(103, 129, 150);
+}
+header ul.menu{
+    display: flex;
+    list-style: none;
+}
+
+header ul.menu>li:last-child{
+    border: none;
+}
+header ul.menu>li>ul{
+    position: absolute;
+    background-color: rgb(49, 105, 128);
+    list-style: none;
+    top: 40px;
+    width:170px;
+    display: none;
+}
+header ul.menu>li:hover>ul{
+    display: block;
+}
+header ul.menu>li>ul>li{
+    padding: 10px;
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+header ul.menu>li>ul>li:hover{
+    background-color: rgb(144, 173, 201);
+}
+.slogan {
+    text-align: center !important;
+    width: 100%;
+}
+.block_3 {
+    flex: 0 0 auto;
+    width: 30%;
+    margin: 10px;
+    text-align: center;
+}
+.link{
+    color:rgb(3, 3, 119);
+    text-align:right;
+}
+footer {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 19px;
+    background-color: #82adc5; 
+    padding: 17px;
+    text-align: left;
+}
+footer a{
+    color: rgb(44, 44, 177);
+}
+section{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20.5px;
+    text-align: center;
+}
+section p{
+    text-align: left;
+}
